@@ -99,57 +99,8 @@
                                 <form method="post" enctype="multipart/form-data">
                                     {% csrf_token %}
                                     <div class="form-group mb-3">
-                                        <label class="control-label">Project Title</label>
-                                        {{ form.title }}
+                                        {{ form.as_p }}
                                     </div>
-                                    <div class="form-group mb-3 tg-inputwithicon">
-                                        <label class="control-label">Categories</label>
-                                        <div class="tg-select">
-                                            {{ form.category }}
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb-3 tg-inputwithicon">
-                                        <label class="control-label">SubCategories</label>
-                                        <div class="tg-select">
-                                            {{ form.subcategory }}
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Price Title</label>
-                                        {{ form.price }}
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Description</label>
-                                        {{ form.description }}
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Information</label>
-                                        {{ form.information }}
-                                    </div>
-
-                                    <div class="form-group md-3">
-                                        <label class="control-label">Location</label>
-                                        {{ form.location }}
-                                    </div>
-                                    <div class="form-group md-3">
-                                        <label class="control-label">Image</label>
-                                        <label class="tg-fileuploadlabel" for="tg-photogallery">
-                                            <span>Drop files anywhere to upload</span>
-                                            <span>Or</span>
-                                            <span class="btn btn-common">Select Files</span>
-                                            <span>Maximum upload file size: 500 KB</span>
-                                            {{ form.image }}
-                                        </label>
-                                    </div>
-
-                                    <div class="dashboard-wrapper">
-                                        <div class="form-group mb-3">
-                                            <label class="control-label">Telegram Contact</label>
-                                            {{form.location}}
-                                        </div>
-                                    </div>
-
                                     <button type="submit" class="btn btn-primary">Post Ad</button>
                                 </form>
                             </div>
