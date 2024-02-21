@@ -1,0 +1,105 @@
+{% load static %}
+
+
+<header id="header-wrap">
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-5 col-xs-12">
+    
+                    <ul class="list-inline">
+                        <li><i class="lni-phone"></i> +251987654321</li>
+                        <li><i class="lni-envelope"></i> <a href="http://preview.uideck.com/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="5e2d2b2e2e312c2a1e39333f3732703d3133">[email&#160;protected]</a></li>
+                    </ul>
+    
+                </div>
+                <div class="col-lg-5 col-md-7 col-xs-12">
+                    <div class="roof-social float-right">
+                        <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                        <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+                        <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+                        <a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a>
+                        <a class="google" href="#"><i class="lni-google-plus"></i></a>
+                    </div>
+                    <div class="header-top-right float-right">
+                        <a href="{% url 'login' %}" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
+                        <a href="{% url 'users-register' %}" class="header-top-button"><i class="lni-pencil"></i>
+                            Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top scrolling-navbar">
+        <div class="container">
+    
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                    aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="lni-menu"></span>
+                    <span class="lni-menu"></span>
+                    <span class="lni-menu"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="{% static 'assets/img/logo1.png' %}" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="/">
+                            Home
+                        </a>
+    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'myapp:shopgrid' %}">
+                            Prodact List
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'myapp:trend' %}">
+                            Trending Prodact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'myapp:contact' %}">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <div class="post-btn">
+                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}"><i class="lni-pencil-alt"></i> Post an Ad</a>
+                </div>
+            </div>
+        </div>
+    
+        <ul class="mobile-menu">
+            <li>
+                <a class="active" href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'myapp:shopgrid' %}">Prodact List</a>
+            </li>
+            <li>
+                <a href="{% url 'myapp:trend' %}">
+                    Trending Prodact
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'myapp:contact' %}">
+                    Contact
+                </a>
+            </li>
+    
+    
+        </ul>
+    
+    </nav>
+</header>
