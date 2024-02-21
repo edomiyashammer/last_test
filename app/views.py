@@ -225,7 +225,57 @@ def product_create(request):
     return render(request, "product_form.html", {"form": form})
 
 
-@login_required
+def product_edit(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect("Dash")
+    else:
+        form = ProductForm(instance=product)
+    return render(request, "product_edit.html", {"form": form})
 
+
+def product_delete(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == "POST":
+        product.delete()
+        return redirect("Dash")
+    return render(request, "product_confirm_delete.html", {"product": product})
+
+
+@login_required
 def success(request):
     return render(request, "success.html")
+
+
+@login_required
+def Dash(request):
+
+    products = Product.objects.all()
+
+    return render(request, "dashboard.html", {'products': products})
+
+
+@login_required
+def Profile(request):
+    return render(request, "profile.html")
+
+
+@login_required
+def Privacy(request):
+    return render(request, "privacy-setting.html")
+
+
+@login_required
+def my_ads(request):
+
+    products = Product.objects.all()
+
+    return render(request, "account-myads.html", {"products": products})
+
+
+@login_required
+def payment(request):
+    return render(request, "payments.html")

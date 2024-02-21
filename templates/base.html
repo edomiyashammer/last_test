@@ -59,11 +59,11 @@
                     <div class="widget">
                         <h3 class="block-title">Quick Link</h3>
                         <ul class="menu">
-                            <li><a href="#">- About Us</a></li>
-                            <li><a href="#">- Login</a></li>
-                            <li><a href="#">- Register</a></li>
-                            <li><a href="#">- Shop</a></li>
-                            <li><a href="#">- FAQ's</a></li>
+                            <li><a href="/">- About Us</a></li>
+                            <li><a href="{% url 'login' %}">- Login</a></li>
+                            <li><a href="{% url 'myapp:shopgrid' %}">- Shop</a></li>
+                            <li><a href="{% url 'users-register' %}">- Register</a></li>
+                            <li><a href="{% url 'myapp:contact' %}">- FAQ's</a></li>
                         </ul>
                     </div>
                 </div>

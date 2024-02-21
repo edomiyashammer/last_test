@@ -2,7 +2,7 @@
 
 {% block title %}Post a Product{% endblock %}
 
-{% block header %}Product Posting Form{% endblock %}
+{% block header %}Edit Product{% endblock %}
 {% load static %}
 {% block content %}
 
@@ -13,16 +13,116 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumb-wrapper">
-                    <h2 class="product-title">Post you Ads</h2>
+                    <h2 class="product-title">Edit Product</h2>
                     <ol class="breadcrumb">
                         <li><a href="/">Home /</a></li>
-                        <li class="current">Post you Ads</li>
+                        <li class="current">Edit Product</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<div id="content" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 page-sidebar">
+                <aside>
+                    <div class="sidebar-box">
+                        <div class="user">
+                            <figure>
+                                <a href="#"><img src="{{ user.profile.avatar.url }}" alt=""></a>
+                            </figure>
+                            <div class="usercontent">
+                                <h3>Hello!{{user.username}}</h3>
+                            </div>
+                        </div>
+                        <nav class="navdashboard">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'myapp:Dash' %}">
+                                        <i class="lni-dashboard"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'users-profile' %}">
+                                        <i class="lni-cog"></i>
+                                        <span>Profile Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'myapp:my_ads' %}">
+                                        <i class="lni-layers"></i>
+                                        <span>My Ads</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'myapp:payment' %}">
+                                        <i class="lni-wallet"></i>
+                                        <span>Payments</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{% url 'myapp:Privacy' %}">
+                                        <i class="lni-star"></i>
+                                        <span>Privacy Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/logout">
+                                        <i class="lni-enter"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget">
+                        <h4 class="widget-title">Advertisement</h4>
+                        <div class="add-box">
+                            <img class="img-fluid" src="{% static 'assets/img/img1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="row page-content">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                        <div class="inner-box">
+                            <div class="dashboard-box">
+                                <h2 class="dashbord-title">Edit Ad Detail</h2>
+                            </div>
+                            <div class="dashboard-wrapper">
+                                <form method="post" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <div class="form-group mb-3">
+                                        {{ form.as_p }}
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="inner-box">
+                            <div class="tg-contactdetail">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock %}
 
 <div id="content" class="section-padding">
     <div class="container">
@@ -169,5 +269,3 @@
     </div>
 </div>
 </div>
-
-{% endblock %}

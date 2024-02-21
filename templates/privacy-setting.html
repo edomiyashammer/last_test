@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+
+{% include 'nav.html' %}
+
+<div class="page-header" style="background: url({% static 'assets/img/banner1.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-wrapper">
+                    <h2 class="product-title">Privacy Setting</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home /</a></li>
+                        <li class="current">Privacy Setting</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="content" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3 page-sidebar">
+                <aside>
+                    <div class="sidebar-box">
+                        <div class="user">
+                            <figure>
+                                <a href="#"><img src="{{ user.profile.avatar.url }}" alt=""></a>
+                            </figure>
+                            <div class="usercontent">
+                                <h3>Hello!{{user.username}}</h3>
+                            </div>
+                        </div>
+                        <nav class="navdashboard">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'myapp:Dash' %}">
+                                        <i class="lni-dashboard"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'users-profile' %}">
+                                        <i class="lni-cog"></i>
+                                        <span>Profile Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'myapp:my_ads' %}">
+                                        <i class="lni-layers"></i>
+                                        <span>My Ads</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'myapp:payment' %}">
+                                        <i class="lni-wallet"></i>
+                                        <span>Payments</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{% url 'myapp:Privacy' %}">
+                                        <i class="lni-star"></i>
+                                        <span>Privacy Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/logout">
+                                        <i class="lni-enter"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget">
+                        <h4 class="widget-title">Advertisement</h4>
+                        <div class="add-box">
+                            <img class="img-fluid" src="{% static 'assets/img/img1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                <div class="page-content">
+                    <div class="inner-box">
+                        <div class="dashboard-box">
+                            <h2 class="dashbord-title">Privacy Settings</h2>
+                        </div>
+                        <div class="dashboard-wrapper">
+                            <form class="row form-dashboard">
+                                <H1>Comingsoon</H1>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

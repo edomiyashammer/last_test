@@ -78,7 +78,8 @@
                     </li>
                 </ul>
                 <div class="post-btn">
-                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}"><i class="lni-pencil-alt"></i> Post an Ad</a>
+                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}"><i class="lni-pencil-alt"></i>
+                        Post an Ad</a>
                 </div>
             </div>
         </div>
@@ -197,7 +198,7 @@
                                     <a href="#">Sold</a>
                                 </div>
                                 {% endif %}
-                                <span class="price">${{ product.price }}</span>
+                                <span class="price">ETB{{ product.price }}</span>
                             </div>
                             <div class="product-content">
                                 <h3 class="product-title"><a
@@ -298,7 +299,7 @@
                         </div>
                         <p class="dsc">{{ product.description }}</p>
                         <div class="listing-bottom">
-                            <h3 class="price float-left">${{ product.price }}</h3>
+                            <h3 class="price float-left">ETB{{ product.price }}</h3>
                             <a href="{% url 'myapp:product_detail' product.id %}"
                                 class="btn btn-common float-right">View
                                 Details</a>

@@ -115,7 +115,8 @@
                                                 <a href="#">{{ product.category }}</a>
 
                                             </div>
-                                            <h4><a href="{% url 'myapp:product_detail' product.id %}">{{ product.title }}</a></h4>
+                                            <h4><a href="{% url 'myapp:product_detail' product.id %}">{{ product.title
+                                                    }}</a></h4>
                                             <div class="meta-tag">
                                                 <span>
                                                     <a href="#"><i class="lni-user"></i> John Smith</a>
@@ -129,7 +130,7 @@
                                             </div>
                                             <p class="dsc">{{ product.description}}</p>
                                             <div class="listing-bottom">
-                                                <h3 class="price float-left">${{ product.price }}</h3>
+                                                <h3 class="price float-left">ETB{{ product.price }}</h3>
                                                 <a href="{% url 'myapp:product_detail' product.id %}"
                                                     class="btn btn-common float-right">View
                                                     Details</a>
@@ -163,7 +164,8 @@
                                                 <a href="#">{{ product.category }} </a>
 
                                             </div>
-                                            <h4><a href="{% url 'myapp:product_detail' product.id %}">{{ product.title}}</a></h4>
+                                            <h4><a href="{% url 'myapp:product_detail' product.id %}">{{
+                                                    product.title}}</a></h4>
                                             <div class="meta-tag">
                                                 <span>
                                                     <a href="#"><i class="lni-user"></i> John Smith</a>
@@ -177,7 +179,7 @@
                                             </div>
                                             <p class="dsc">{{ product.description}}</p>
                                             <div class="listing-bottom">
-                                                <h3 class="price float-left">${{ product.price }}</h3>
+                                                <h3 class="price float-left">ETB{{ product.price }}</h3>
                                                 <a href="{% url 'myapp:product_detail' product.id %}"
                                                     class="btn btn-common float-right">View
                                                     Details</a>
@@ -203,8 +205,7 @@
                                                 <span class="bg-green"><i class="lni-heart"></i></span>
                                                 <span><i class="lni-bookmark"></i></span>
                                             </div>
-                                            <a href="#"><img class="img-fluid" src="{{ post.image.url }}"
-                                                    alt=""></a>
+                                            <a href="#"><img class="img-fluid" src="{{ post.image.url }}" alt=""></a>
                                         </figure>
                                         <div class="feature-content">
                                             <div class="product">
@@ -225,7 +226,7 @@
                                             </div>
                                             <p class="dsc">{{ post.description}}</p>
                                             <div class="listing-bottom">
-                                                <h3 class="price float-left">${{ post.price }}</h3>
+                                                <h3 class="price float-left">ETB{{ post.price }}</h3>
                                                 <a href="/" class="btn btn-common float-right">View
                                                     Details</a>
                                             </div>

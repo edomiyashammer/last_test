@@ -2,7 +2,7 @@
 
 {% block title %}Post a Product{% endblock %}
 
-{% block header %}Product Posting Form{% endblock %}
+{% block header %}Edit Product{% endblock %}
 {% load static %}
 {% block content %}
 
@@ -13,16 +13,17 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumb-wrapper">
-                    <h2 class="product-title">Post you Ads</h2>
+                    <h2 class="product-title">Edit Product</h2>
                     <ol class="breadcrumb">
                         <li><a href="/">Home /</a></li>
-                        <li class="current">Post you Ads</li>
+                        <li class="current">Edit Product</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div id="content" class="section-padding">
     <div class="container">
@@ -93,64 +94,15 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
                         <div class="inner-box">
                             <div class="dashboard-box">
-                                <h2 class="dashbord-title">Ad Detail</h2>
+                                <h2 class="dashbord-title">Confirm Deletion</h2>
                             </div>
                             <div class="dashboard-wrapper">
                                 <form method="post" enctype="multipart/form-data">
                                     {% csrf_token %}
                                     <div class="form-group mb-3">
-                                        <label class="control-label">Project Title</label>
-                                        {{ form.title }}
+                                        <p>Are you sure you want to delete "{{ product.title }}"?</p>
                                     </div>
-                                    <div class="form-group mb-3 tg-inputwithicon">
-                                        <label class="control-label">Categories</label>
-                                        <div class="tg-select">
-                                            {{ form.category }}
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb-3 tg-inputwithicon">
-                                        <label class="control-label">SubCategories</label>
-                                        <div class="tg-select">
-                                            {{ form.subcategory }}
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Price Title</label>
-                                        {{ form.price }}
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Description</label>
-                                        {{ form.description }}
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="control-label">Information</label>
-                                        {{ form.information }}
-                                    </div>
-
-                                    <div class="form-group md-3">
-                                        <label class="control-label">Location</label>
-                                        {{ form.location }}
-                                    </div>
-                                    <div class="form-group md-3">
-                                        <label class="control-label">Image</label>
-                                        <label class="tg-fileuploadlabel" for="tg-photogallery">
-                                            <span>Drop files anywhere to upload</span>
-                                            <span>Or</span>
-                                            <span class="btn btn-common">Select Files</span>
-                                            <span>Maximum upload file size: 500 KB</span>
-                                            {{ form.image }}
-                                        </label>
-                                    </div>
-
-                                    <div class="dashboard-wrapper">
-                                        <div class="form-group mb-3">
-                                            <label class="control-label">Telegram Contact</label>
-                                            {{form.location}}
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Post Ad</button>
+                                    <button type="submit" class="btn btn-primary">Delete</button>
                                 </form>
                             </div>
                         </div>

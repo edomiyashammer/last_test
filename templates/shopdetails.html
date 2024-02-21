@@ -37,7 +37,7 @@
                             <div class="product-img">
                                 <img class="img-fluid" src="{{ product.image1.url }}" alt="{{ product.title }} Image 1">
                             </div>
-                            <span class="price">${{ product.price }}</span>
+                            <span class="price">ETB{{ product.price }}</span>
 
                         </div>
                         <div class="item">
@@ -46,7 +46,7 @@
                                 <img class="img-fluid" src="{{ product.image2.url }}" alt="{{ product.title }} Image 2">
                                 {% endif %}
                             </div>
-                            <span class="price">${{ product.price }}</span>
+                            <span class="price">ETB{{ product.price }}</span>
                         </div>
 
                     </div>
@@ -113,13 +113,9 @@
                                 </div>
                                 <div class="agent-details">
                                     <h3><a href="#">{{ user.username}}</a></h3>
-                                    <span><i class="lni-phone-handset"></i>(123) 123-456</span>
+                                    <span><i class="lni-phone-handset"></i>{{ product.location }}</span>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="Your Email">
-                            <input type="text" class="form-control" placeholder="Your Phone">
-                            <p>I'm interested in this property [ID 123456] and I'd like to know more details.</p>
-                            <button class="btn btn-common fullwidth mt-4">Send Message</button>
                         </div>
                     </div>
                     <div class="widget">
@@ -144,7 +140,7 @@
                                             <a href="#"><i class="lni-tag"></i> {{ product.category }}</a>
                                         </span>
                                     </div>
-                                    <h4 class="price">${{ product.price }}</h4>
+                                    <h4 class="price">ETB{{ product.price }}</h4>
                                 </div>
                                 <div class="clearfix"></div>
                             </li>
