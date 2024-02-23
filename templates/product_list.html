@@ -91,6 +91,8 @@
                     <div class="tab-content">
                         <div id="grid-view" class="tab-pane fade">
                             <div class="row">
+                                {% for product in products %}
+                                
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="featured-box">
                                         <figure>
@@ -98,15 +100,14 @@
                                                 <span class="bg-green"><i class="lni-heart"></i></span>
                                                 <span><i class="lni-bookmark"></i></span>
                                             </div>
-                                            <a href="#"><img class="img-fluid"
-                                                    src="{% static 'assets/img/featured/img-1.jpg' %}" alt=""></a>
+                                            <a href="#"><img class="img-fluid" src="{{ product.image1.url }}" alt=""></a>
                                         </figure>
                                         <div class="feature-content">
                                             <div class="product">
-                                                <a href="#">Electronic > </a>
-                                                <a href="#">Apple</a>
+                                                <a href="#">{{ product.category }}</a>
+                                
                                             </div>
-                                            <h4><a href="ads-details.html">Canon SX Powershot ...</a></h4>
+                                            <h4><a href="{% url 'myapp:product_detail' product.id %}">{{ product.title }}</a></h4>
                                             <div class="meta-tag">
                                                 <span>
                                                     <a href="#"><i class="lni-user"></i> John Smith</a>
@@ -118,16 +119,16 @@
                                                     <a href="#"><i class="lni-tag"></i> Apple</a>
                                                 </span>
                                             </div>
-                                            <p class="dsc">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry.</p>
+                                            <p class="dsc">{{ product.description}}</p>
                                             <div class="listing-bottom">
-                                                <h3 class="price float-left">ETB249.00</h3>
-                                                <a href="ads-details.html" class="btn btn-common float-right">View
+                                                <h3 class="price float-left">ETB{{ product.price }}</h3>
+                                                <a href="{% url 'myapp:product_detail' product.id %}" class="btn btn-common float-right">View
                                                     Details</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                         <div id="list-view" class="tab-pane fade active show">
