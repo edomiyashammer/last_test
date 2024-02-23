@@ -72,10 +72,13 @@
                         </a>
                     </li>
                 </ul>
+                {% if user.is_authenticated %}
                 <div class="post-btn">
-                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}"><i class="lni-pencil-alt"></i>
-                        Post an Ad</a>
+                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}">
+                        <i class="lni-pencil-alt"></i> Post an Ad
+                    </a>
                 </div>
+                {% endif %}
             </div>
         </div>
 
