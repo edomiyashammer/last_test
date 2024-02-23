@@ -78,10 +78,13 @@
                         </a>
                     </li>
                 </ul>
-                <div class="post-btn">
-                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}"><i class="lni-pencil-alt"></i> Post an Ad</a>
-                </div>
+                < {% if user.is_authenticated %} <div class="post-btn">
+                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}">
+                        <i class="lni-pencil-alt"></i> Post an Ad
+                    </a>
             </div>
+            {% endif %}>
+        </div>
         </div>
 
         <ul class="mobile-menu">
@@ -103,7 +106,15 @@
                     Contact
                 </a>
             </li>
-
+            <li>
+                {% if user.is_authenticated %}
+                <div class="post-btn">
+                    <a class="btn btn-common" href="{% url 'myapp:product_create' %}">
+                        <i class="lni-pencil-alt"></i> Post an Ad
+                    </a>
+                </div>
+                {% endif %}
+            </li>
 
         </ul>
 
@@ -138,33 +149,33 @@
     </div>
 
 </header>
-    
-    
-    
-    <section id="categories">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-md-12 col-xs-12">
-                    <div id="categories-icon-slider" class="categories-wrapper owl-carousel owl-theme">
-            {% for subcategory in subcategories %}
-                        <div class="item">
-                            <a href="{% url 'myapp:product-list-with-category-subcategory' category.id subcategory.id %}">
-                                <div class="category-icon-item">
-                                    <div class="icon-box">
-                                        <div class="icon">
-                                            <img src="{{ subcategory.imagesub.url }}">
-                                        </div>
-                                        <h4>{{ subcategory.name }}</h4>
+
+
+
+<section id="categories">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12 col-xs-12">
+                <div id="categories-icon-slider" class="categories-wrapper owl-carousel owl-theme">
+                    {% for subcategory in subcategories %}
+                    <div class="item">
+                        <a href="{% url 'myapp:product-list-with-category-subcategory' category.id subcategory.id %}">
+                            <div class="category-icon-item">
+                                <div class="icon-box">
+                                    <div class="icon">
+                                        <img src="{{ subcategory.imagesub.url }}">
                                     </div>
+                                    <h4>{{ subcategory.name }}</h4>
                                 </div>
-                            </a>
-                        </div>
-                        {% endfor %}
+                            </div>
+                        </a>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
