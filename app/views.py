@@ -213,7 +213,7 @@ def trend(request):
     return render(request, "trand.html", {"products": products})
 
 
-@login_required
+
 def product_create(request):
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
