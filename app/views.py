@@ -213,13 +213,12 @@ def trend(request):
     return render(request, "trand.html", {"products": products})
 
 
-
 def product_create(request):
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect("product_list")
+            return redirect("/")  # Redirect to home page after successful submission
     else:
         form = ProductForm()
     return render(request, "product_form.html", {"form": form})
@@ -231,17 +230,17 @@ def product_edit(request, pk):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            return redirect("Dash")
+            return redirect("/")  # Redirect to "my_ads" after successful edit
     else:
         form = ProductForm(instance=product)
-    return render(request, "product_edit.html", {"form": form})
+    return render(request, "product_edit.html", {"form": form, "product": product})
 
 
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)
     if request.method == "POST":
         product.delete()
-        return redirect("Dash")
+        return redirect("Profile")  # Redirect to "my_ads" after successful deletion
     return render(request, "product_confirm_delete.html", {"product": product})
 
 
