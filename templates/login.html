@@ -69,12 +69,25 @@
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label d-grid gap-2" for="exampleCheck1">
-                    <a href="/signup">Signup</a>
+                    <a href="{% url 'users-register' %}">Signup</a>
                 </label>
             </div>
         </div>
     </div>
 </div>
+
+
+<script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("id_password");
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
+
 
 
 
