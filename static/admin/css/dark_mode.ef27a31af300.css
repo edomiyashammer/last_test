@@ -6,7 +6,7 @@
         --body-fg: #eeeeee;
         --body-bg: #121212;
         --body-quiet-color: #e0e0e0;
-        --body-loud-color: #b0b0b0fff;
+        --body-loud-color: #ffffff;
 
         --breadcrumbs-link-fg: #e0e0e0;
         --breadcrumbs-bg: var(--primary);
@@ -27,7 +27,7 @@
         --selected-bg: #1b1b1b;
         --selected-row: #00363a;
 
-        --close-button-bg: #333333;
+        --close-button-bg: #00000333;
         --close-button-hover-bg: #666666;
     }
 }
@@ -40,7 +40,7 @@ html[data-theme="dark"] {
     --body-fg: #eeeeee;
     --body-bg: #121212;
     --body-quiet-color: #e0e0e0;
-    --body-loud-color: #b0b0b0fff;
+    --body-loud-color: #ffffff;
 
     --breadcrumbs-link-fg: #e0e0e0;
     --breadcrumbs-bg: var(--primary);
@@ -61,7 +61,7 @@ html[data-theme="dark"] {
     --selected-bg: #1b1b1b;
     --selected-row: #00363a;
 
-    --close-button-bg: #333333;
+    --close-button-bg: #00000333;
     --close-button-hover-bg: #666666;
 }
 

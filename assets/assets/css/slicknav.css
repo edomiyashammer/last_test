@@ -115,7 +115,7 @@
 }
 
 .slicknav_menu ul {
-    background: #b0b0b0
+    background: #fff
 }
 
 .slicknav_menu * {
@@ -123,7 +123,7 @@
 }
 
 .slicknav_menu .slicknav_menutxt {
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 700;
     text-shadow: 0 1px 3px #000
 }
@@ -139,7 +139,7 @@
 }
 
 .slicknav_nav {
-    color: #b0b0b0;
+    color: #fff;
     font-size: .875em;
     list-style: outside none none;
     margin: 0;
@@ -183,7 +183,7 @@
 }
 
 .slicknav_brand {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 18px;
     line-height: 30px;
     padding: 7px 12px;

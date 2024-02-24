@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: #b0b0b0;
+    background: #fff;
     font-size: 14px;
     font-weight: 400;
     font-family: open sans, sans-serif;
@@ -25,7 +25,7 @@ h2,
 h3,
 h4 {
     font-size: 36px;
-    color: #333;
+    color: #00000;
     font-weight: 700;
     font-family: roboto, sans-serif
 }
@@ -67,7 +67,7 @@ ol li {
 .hero-heading {
     font-size: 40px;
     font-weight: 700;
-    color: #b0b0b0;
+    color: #fff;
     text-transform: capitalize;
     line-height: 70px;
     letter-spacing: .1rem
@@ -102,7 +102,7 @@ ol li {
 
 .section-title {
     font-size: 30px;
-    color: #333;
+    color: #00000;
     line-height: 52px;
     font-weight: 700;
     padding-bottom: 15px;
@@ -118,7 +118,7 @@ ol li {
     width: 70px;
     margin-left: -90px;
     bottom: 40px;
-    background-color: #98e4ff
+    background-color: #0076C0
 }
 
 .section-title:after {
@@ -128,7 +128,7 @@ ol li {
     width: 70px;
     margin-left: 20px;
     bottom: 40px;
-    background-color: #98e4ff
+    background-color: #0076C0
 }
 
 .section-subcontent {
@@ -157,7 +157,7 @@ ol li {
     bottom: 10px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: #98e4ff
+    background-color: #0076C0
 }
 
 .subtitle {
@@ -182,7 +182,7 @@ ol li {
 .page-title {
     font-size: 62px;
     font-weight: 700;
-    color: #b0b0b0
+    color: #fff
 }
 
 .btn {
@@ -201,13 +201,13 @@ ol li {
 .btn:active {
     box-shadow: none;
     outline: none;
-    color: #b0b0b0
+    color: #fff
 }
 
 .btn-common {
-    background-color: #98e4ff;
+    background-color: #0076C0;
     position: relative;
-    color: #b0b0b0;
+    color: #fff;
     z-index: 1;
     border-radius: 4px;
     transition: all .2s ease-in-out;
@@ -216,7 +216,7 @@ ol li {
 }
 
 .btn-common:hover {
-    color: #b0b0b0;
+    color: #fff;
     box-shadow: 0 6px 22px rgba(0, 0, 0, .1)
 }
 
@@ -229,7 +229,7 @@ ol li {
 }
 
 .btn-border:hover {
-    color: #b0b0b0;
+    color: #fff;
     background-color: rgba(255, 255, 255, .2)
 }
 
@@ -254,7 +254,7 @@ button:focus {
 
 .icon-close,
 .icon-check {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .bg-light {
@@ -262,7 +262,7 @@ button:focus {
 }
 
 .bg-white {
-    background: #b0b0b0
+    background: #fff
 }
 
 .mb-30 {
@@ -287,8 +287,8 @@ a.back-to-top i {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    color: #b0b0b0;
-    background: #98e4ff;
+    color: #fff;
+    background: #0076C0;
     border-radius: 4px;
     text-align: center;
     transition: all .2s ease-in-out;
@@ -318,7 +318,7 @@ a.back-to-top:focus {
 }
 
 .owl-carousel .owl-controls .owl-page span {
-    background: none repeat scroll 0 0 #b0b0b0;
+    background: none repeat scroll 0 0 #fff;
     border-radius: 2px;
     display: block;
     height: 12px;
@@ -333,7 +333,7 @@ a.back-to-top:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #b0b0b0;
+    background-color: #fff;
     z-index: 9999999
 }
 
@@ -356,7 +356,7 @@ a.back-to-top:focus {
     height: 100%;
     border-radius: 100%;
     border: 7px solid transparent;
-    border-top-color: #98e4ff
+    border-top-color: #0076C0
 }
 
 #loader-1:before {
@@ -408,12 +408,12 @@ a.back-to-top:focus {
     line-height: 38px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .page-header .breadcrumb-wrapper .breadcrumb {
     font-size: 14px;
-    color: #98e4ff;
+    color: #0076C0;
     border-radius: 0;
     background: 0 0;
     padding: 5px 0;
@@ -425,12 +425,12 @@ a.back-to-top:focus {
 }
 
 .page-header .breadcrumb-wrapper .breadcrumb li a {
-    color: #b0b0b0;
+    color: #fff;
     padding-right: 5px
 }
 
 #color-style-switcher .bottom a.settings {
-    color: #98e4ff
+    color: #0076C0
 }
 
 @-webkit-keyframes fadeIn {
@@ -465,7 +465,7 @@ a.back-to-top:focus {
 .top-bar .list-inline li {
     display: inline-block;
     line-height: 42px;
-    color: #b0b0b0;
+    color: #fff;
     margin-right: 15px;
     font-size: 14px
 }
@@ -473,19 +473,19 @@ a.back-to-top:focus {
 .top-bar .list-inline li a {
     display: block;
     margin-right: 15px;
-    color: #b0b0b0;
+    color: #fff;
     line-height: 32px
 }
 
 .top-bar .list-inline li i {
     font-size: 14px;
-    color: #b0b0b0;
+    color: #fff;
     padding-right: 5px;
     vertical-align: middle
 }
 
 .roof-social a {
-    color: #b0b0b0;
+    color: #fff;
     float: left;
     font-size: 16px;
     text-align: center;
@@ -503,7 +503,7 @@ a.back-to-top:focus {
 }
 
 .roof-social a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .roof-social .facebook:hover {
@@ -531,7 +531,7 @@ a.back-to-top:focus {
 }
 
 .header-top-right .header-top-button {
-    color: #b0b0b0;
+    color: #fff;
     background: 0 0;
     padding: 3px 10px;
     border-radius: 4px;
@@ -546,7 +546,7 @@ a.back-to-top:focus {
 }
 
 .header-top-right .header-top-button:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .sticky.is-sticky {
@@ -560,12 +560,12 @@ a.back-to-top:focus {
 }
 
 .menu-bg {
-    background: #b0b0b0;
+    background: #fff;
     box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .06)
 }
 
 .menu-bg .navbar-nav .nav-link {
-    color: #333 !important
+    color: #00000 !important
 }
 
 .bg-black {
@@ -586,7 +586,7 @@ a.back-to-top:focus {
 }
 
 .top-nav-collapse {
-    background: #b0b0b0;
+    background: #fff;
     z-index: 999999;
     top: 0 !important;
     min-height: 58px;
@@ -597,7 +597,7 @@ a.back-to-top:focus {
     animation-fill-mode: both;
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
-    background: #b0b0b0 !important
+    background: #fff !important
 }
 
 .top-nav-collapse .navbar-brand {
@@ -609,11 +609,11 @@ a.back-to-top:focus {
 }
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
-    color: #98e4ff !important
+    color: #0076C0 !important
 }
 
 .top-nav-collapse .navbar-nav li.active a.nav-link {
-    color: #b0b0b0 !important
+    color: #fff !important
 }
 
 .indigo {
@@ -639,7 +639,7 @@ a.back-to-top:focus {
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active>a,
 .navbar-expand-lg .navbar-nav li a:focus {
-    color: #98e4ff;
+    color: #0076C0;
     outline: none
 }
 
@@ -648,8 +648,8 @@ a.back-to-top:focus {
 }
 
 .navbar li.active a.nav-link {
-    color: #b0b0b0;
-    background: #98e4ff
+    color: #fff;
+    background: #0076C0
 }
 
 .dropdown-toggle::after {
@@ -664,7 +664,7 @@ a.back-to-top:focus {
     z-index: 99;
     min-width: 190px;
     border: none;
-    background-color: #b0b0b0;
+    background-color: #fff;
     white-space: nowrap;
     border-radius: 0;
     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
@@ -687,7 +687,7 @@ a.back-to-top:focus {
     -moz-animation: fadeIn .4s;
     -o-animation: fadeIn .4s;
     -ms-animation: fadeIn .4s;
-    background: #b0b0b0
+    background: #fff
 }
 
 .dropdown .dropdown-menu .dropdown-item {
@@ -718,8 +718,8 @@ a.back-to-top:focus {
 .dropdown .dropdown-item:focus,
 .dropdown .dropdown-item:hover,
 .dropdown .dropdown-item.active {
-    background: #98e4ff;
-    color: #b0b0b0 !important
+    background: #0076C0;
+    color: #fff !important
 }
 
 .dropdown-item.active,
@@ -733,11 +733,11 @@ a.back-to-top:focus {
 }
 
 .slicknav_btn {
-    border-color: #98e4ff
+    border-color: #0076C0
 }
 
 .slicknav_menu .slicknav_icon-bar {
-    background: #98e4ff
+    background: #0076C0
 }
 
 @media(min-width:768px) and (max-width:991px) {
@@ -802,20 +802,20 @@ a.back-to-top:focus {
     }
 
     .slicknav_nav .active a {
-        background: #98e4ff;
-        color: #b0b0b0
+        background: #0076C0;
+        color: #fff
     }
 
     .slicknav_nav .dropdown li a.active {
         background: #f5f5f5;
-        color: #98e4ff
+        color: #0076C0
     }
 }
 
 #hero-area {
     background: url(../img/hero-area.jpg) no-repeat;
     background-size: cover;
-    color: #b0b0b0;
+    color: #fff;
     overflow: hidden;
     position: relative
 }
@@ -835,19 +835,19 @@ a.back-to-top:focus {
 }
 
 #hero-area .contents .head-title {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 15px
 }
 
 #hero-area .contents span.year {
-    color: #98e4ff
+    color: #0076C0
 }
 
 #hero-area .contents p {
     font-size: 15px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 400;
     line-height: 26px
 }
@@ -862,7 +862,7 @@ a.back-to-top:focus {
 }
 
 .search-bar .search-inner {
-    background: #b0b0b0;
+    background: #fff;
     overflow: hidden;
     border-radius: 4px
 }
@@ -884,7 +884,7 @@ a.back-to-top:focus {
     float: left;
     width: 25.33%;
     padding: 0 0 0 10px;
-    background: #b0b0b0;
+    background: #fff;
     border-radius: 0;
     border-left: 1px solid #f1f1f1
 }
@@ -907,7 +907,7 @@ a.back-to-top:focus {
     border-radius: 0;
     font-size: 14px;
     line-height: 30px;
-    background: #b0b0b0
+    background: #fff
 }
 
 .search-bar .form-group .form-control,
@@ -959,7 +959,7 @@ a.back-to-top:focus {
     top: 0;
     right: 0;
     z-index: 2;
-    color: #98e4ff;
+    color: #0076C0;
     position: absolute;
     right: 5px;
     font-size: 20px;
@@ -998,7 +998,7 @@ a.back-to-top:focus {
 #hero-area-two {
     background: url(../img/hero-area.jpg) no-repeat;
     background-size: cover;
-    color: #b0b0b0;
+    color: #fff;
     overflow: hidden;
     position: relative
 }
@@ -1018,7 +1018,7 @@ a.back-to-top:focus {
 }
 
 #hero-area-two .contents .head-title {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 40px;
     font-weight: 500;
     line-height: 52px;
@@ -1027,7 +1027,7 @@ a.back-to-top:focus {
 
 #hero-area-two .contents p {
     font-size: 15px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 400;
     line-height: 26px;
     margin: 0 0 50px
@@ -1044,7 +1044,7 @@ a.back-to-top:focus {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    background: #b0b0b0
+    background: #fff
 }
 
 .search-two .search-inner>.row {
@@ -1094,7 +1094,7 @@ a.back-to-top:focus {
     position: absolute;
     left: -5px;
     top: calc(100% + 13px);
-    background: #b0b0b0;
+    background: #fff;
     width: 100%;
     max-height: 200px;
     overflow-y: scroll;
@@ -1117,18 +1117,18 @@ a.back-to-top:focus {
 }
 
 .search-two .search-inner .search-suggestion .search-suggestion-items ul li a {
-    color: #333;
+    color: #00000;
     padding: 5px 0;
     display: inline-block;
     border: 0
 }
 
 .search-two .search-inner .search-suggestion .search-suggestion-items ul li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .search-two .search-inner .search-suggestion .search-suggestion-items ul li a i {
-    color: #b0b0b0;
+    color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1136,7 +1136,7 @@ a.back-to-top:focus {
     text-align: center;
     margin-right: 10px;
     vertical-align: middle;
-    background: #98e4ff;
+    background: #0076C0;
     display: inline-block;
     font-size: 18px
 }
@@ -1185,8 +1185,8 @@ a.back-to-top:focus {
 
 .adverts-search-suggestion .adverts-search-suggestion-items ul li a:hover,
 .adverts-search-suggestion .adverts-search-suggestion-items ul li a:focus {
-    color: #b0b0b0;
-    border-color: #b0b0b0
+    color: #fff;
+    border-color: #fff
 }
 
 .contents-hero-two {
@@ -1195,13 +1195,13 @@ a.back-to-top:focus {
 
 .contents-text .dsc {
     font-size: 18px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 100;
     margin-bottom: 20px
 }
 
 .contents-text .heading-title {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 30px
@@ -1221,7 +1221,7 @@ a.back-to-top:focus {
 }
 
 .classiser-search-bar .search-inner h4 {
-    color: #b0b0b0;
+    color: #fff;
     margin-top: 0;
     font-size: 22px;
     margin-bottom: 20px
@@ -1231,7 +1231,7 @@ a.back-to-top:focus {
     width: 100%;
     float: left;
     padding: 0 0 0 52px;
-    background: #b0b0b0;
+    background: #fff;
     border-radius: 50px;
     margin-bottom: 20px
 }
@@ -1290,7 +1290,7 @@ a.back-to-top:focus {
     font-size: 15px;
     line-height: 30px;
     padding: 10px 15px 15px 0;
-    background: #b0b0b0;
+    background: #fff;
     z-index: 1;
     width: 100%;
     position: relative;
@@ -1328,7 +1328,7 @@ a.back-to-top:focus {
     font-size: 15px;
     line-height: 30px;
     padding: 10px 15px 15px 5px;
-    background: #b0b0b0
+    background: #fff
 }
 
 #main-slide .carousel-control {
@@ -1377,12 +1377,12 @@ a.back-to-top:focus {
     line-height: 48px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #b0b0b0
+    color: #fff
 }
 
 #main-slide .carousel-item .carousel-caption .sub-heading {
     font-size: 14px;
-    color: #b0b0b0
+    color: #fff
 }
 
 #main-slide .carousel-item.active .carousel-caption {
@@ -1392,7 +1392,7 @@ a.back-to-top:focus {
 }
 
 #main-slide .carousel-caption {
-    color: #b0b0b0;
+    color: #fff;
     position: absolute;
     top: 40%
 }
@@ -1414,19 +1414,19 @@ a.back-to-top:focus {
     line-height: 40px;
     font-size: 18px;
     width: 40px;
-    border: 1px solid #b0b0b0;
+    border: 1px solid #fff;
     height: 40px;
     display: block;
-    color: #b0b0b0;
+    color: #fff;
     border-radius: 0;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease
 }
 
 #main-slide .carousel-control i:hover {
-    color: #b0b0b0;
-    background: #98e4ff;
-    border-color: #98e4ff
+    color: #fff;
+    background: #0076C0;
+    border-color: #0076C0
 }
 
 .carousel .carousel-item.active .animated2 {
@@ -1500,7 +1500,7 @@ a.back-to-top:focus {
 
 .featured-box {
     width: 100%;
-    background: #b0b0b0;
+    background: #fff;
     margin-bottom: 15px;
     margin-top: 15px
 }
@@ -1520,8 +1520,8 @@ a.back-to-top:focus {
     display: inline-block;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: #98e4ff;
-    color: #b0b0b0;
+    background-color: #0076C0;
+    color: #fff;
     padding: 4px 15px
 }
 
@@ -1537,11 +1537,11 @@ a.back-to-top:focus {
 
 .featured-box figure .icon span i {
     z-index: 2;
-    color: #b0b0b0;
+    color: #fff;
     font-size: 15px;
     font-weight: 500;
     text-align: center;
-    background: #98e4ff;
+    background: #0076C0;
     padding: 10px;
     display: inline-block;
     border-radius: 50%;
@@ -1572,7 +1572,7 @@ a.back-to-top:focus {
 }
 
 .featured-box .feature-content .product a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .featured-box .feature-content h4 {
@@ -1583,7 +1583,7 @@ a.back-to-top:focus {
 }
 
 .featured-box .feature-content h4 a {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .featured-box .feature-content span {
@@ -1612,7 +1612,7 @@ a.back-to-top:focus {
 }
 
 .featured-box .feature-content .meta-tag span a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .featured-box .feature-content .dsc {
@@ -1629,7 +1629,7 @@ a.back-to-top:focus {
 .featured-box .feature-content .listing-bottom .price {
     font-size: 24px;
     font-weight: 500;
-    color: #98e4ff;
+    color: #0076C0;
     margin: 0;
     line-height: 36px
 }
@@ -1639,7 +1639,7 @@ a.back-to-top:focus {
 }
 
 .product-item {
-    background: #b0b0b0
+    background: #fff
 }
 
 .product-item .carousel-thumb {
@@ -1694,13 +1694,13 @@ a.back-to-top:focus {
     bottom: 20px;
     left: 20px;
     z-index: 9999;
-    background: #b0b0b0;
+    background: #fff;
     padding: 3px 6px;
     border-radius: 4px
 }
 
 .product-item .carousel-thumb:hover {
-    border-color: #98e4ff
+    border-color: #0076C0
 }
 
 .product-item .carousel-thumb:hover .overlay {
@@ -1745,7 +1745,7 @@ a.back-to-top:focus {
 }
 
 .product-item .product-title a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .product-item span {
@@ -1765,7 +1765,7 @@ a.back-to-top:focus {
     font-size: 15px;
     text-align: center;
     border: 1px solid #f1f1f1;
-    color: #98e4ff;
+    color: #0076C0;
     width: 35px;
     margin-left: 10px;
     height: 35px;
@@ -1781,9 +1781,9 @@ a.back-to-top:focus {
 }
 
 .product-item .icon i:hover {
-    color: #b0b0b0;
-    border-color: #98e4ff;
-    background: #98e4ff
+    color: #fff;
+    border-color: #0076C0;
+    background: #0076C0
 }
 
 .product-item .card-text {
@@ -1795,26 +1795,26 @@ a.back-to-top:focus {
 
 .product-item .card-text .icon-wrap {
     margin-right: 5px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .product-item .card-text .address {
     font-size: 12px;
-    color: #333
+    color: #00000
 }
 
 .product-item .card-text .address:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .bg-slod a {
     background: #9940ff;
-    color: #b0b0b0 !important
+    color: #fff !important
 }
 
 .bg-sale a {
-    background: #98e4ff;
-    color: #b0b0b0 !important
+    background: #0076C0;
+    color: #fff !important
 }
 
 .owl-nav {
@@ -1837,7 +1837,7 @@ a.back-to-top:focus {
     width: 40px;
     height: 40px;
     display: block !important;
-    background: #98e4ff !important;
+    background: #0076C0 !important;
     text-align: center;
     display: inline-block;
     opacity: 1 !important;
@@ -1850,7 +1850,7 @@ a.back-to-top:focus {
 }
 
 .owl-nav div i {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 16px;
     line-height: 40px
 }
@@ -1871,7 +1871,7 @@ a.back-to-top:focus {
 .futere-ad-widget {
     position: relative;
     overflow: hidden;
-    color: #b0b0b0
+    color: #fff
 }
 
 .futere-ad-widget img {
@@ -1934,7 +1934,7 @@ a.back-to-top:focus {
 .categories-list-ad .categories-list {
     padding: 10px 20px 20px;
     margin-top: 30px;
-    background-color: #b0b0b0;
+    background-color: #fff;
     box-shadow: 0 2px 18px 0 rgba(198, 198, 198, .3)
 }
 
@@ -1954,7 +1954,7 @@ a.back-to-top:focus {
 }
 
 .categories-list-ad .categories-list li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .categories-list-ad .categories-list li:last-child {
@@ -1970,7 +1970,7 @@ a.back-to-top:focus {
 }
 
 .box {
-    background: #b0b0b0;
+    background: #fff;
     color: #666;
     float: left;
     margin: 0 0 30px;
@@ -2016,7 +2016,7 @@ a.back-to-top:focus {
     font-size: 18px;
     font-weight: 500;
     margin: 0;
-    color: #333;
+    color: #00000;
     webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -ms-transition: all .5s ease-out;
@@ -2038,7 +2038,7 @@ a.back-to-top:focus {
 }
 
 .box:hover {
-    background: #98e4ff;
+    background: #0076C0;
     -webkit-box-shadow: 0 16px 20px 0 rgba(216, 216, 216, .75);
     -moz-box-shadow: 0 16px 20px 0 rgba(216, 216, 216, .75);
     box-shadow: 0 16px 20px 0 rgba(216, 216, 216, .75)
@@ -2055,7 +2055,7 @@ a.back-to-top:focus {
 .box-hover i,
 .box:hover h4,
 .box:hover strong {
-    color: #b0b0b0
+    color: #fff
 }
 
 #categories {
@@ -2063,7 +2063,7 @@ a.back-to-top:focus {
 }
 
 #categories .categories-wrapper {
-    background: #b0b0b0;
+    background: #fff;
     padding: 20px 30px;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23)
 }
@@ -2088,7 +2088,7 @@ a.back-to-top:focus {
     width: 40px;
     height: 40px;
     display: block !important;
-    background: #98e4ff !important;
+    background: #0076C0 !important;
     text-align: center;
     display: inline-block;
     opacity: 1 !important;
@@ -2106,7 +2106,7 @@ a.back-to-top:focus {
 }
 
 #categories .owl-theme .owl-nav div i {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 16px;
     line-height: 40px
 }
@@ -2137,7 +2137,7 @@ a.back-to-top:focus {
 }
 
 .category-icon-item .icon-box .icon i {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 42px;
     line-height: normal;
     width: auto;
@@ -2146,7 +2146,7 @@ a.back-to-top:focus {
 
 .category-icon-item .icon-box h4 {
     font-size: 15px;
-    color: #333;
+    color: #00000;
     line-height: 15px;
     font-weight: 500;
     margin-bottom: 0;
@@ -2162,7 +2162,7 @@ a.back-to-top:focus {
 }
 
 .category-icon-item:hover h4 {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .category-icon-item:hover .icon {
@@ -2172,7 +2172,7 @@ a.back-to-top:focus {
 }
 
 .category-box {
-    background-color: #b0b0b0;
+    background-color: #fff;
     margin: 30px 0;
     min-height: 277px;
     box-shadow: 0 2px 18px 0 rgba(198, 198, 198, .3);
@@ -2196,10 +2196,10 @@ a.back-to-top:focus {
 .category-box .icon i {
     display: inline-block;
     font-size: 22px;
-    background: #98e4ff;
+    background: #0076C0;
     width: 52px;
     height: 52px;
-    color: #b0b0b0;
+    color: #fff;
     line-height: 48px;
     box-shadow: 3px 6px 6px rgba(0, 0, 0, .25)
 }
@@ -2222,11 +2222,11 @@ a.back-to-top:focus {
     font-weight: 500;
     margin-top: 5px;
     margin-bottom: 0;
-    color: #333
+    color: #00000
 }
 
 .category-box .category-header h4:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .category-box .category-content {
@@ -2248,7 +2248,7 @@ a.back-to-top:focus {
 }
 
 .category-box .category-content li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .category-box .category-content li a span:first-child {
@@ -2334,8 +2334,8 @@ a.back-to-top:focus {
 .product-filter .nav-tabs .nav-item.show .nav-link,
 .product-filter .nav-tabs .nav-link.active {
     border: none;
-    color: #b0b0b0;
-    color: #98e4ff
+    color: #fff;
+    color: #0076C0
 }
 
 .product-filter .short-name {
@@ -2375,14 +2375,14 @@ a.back-to-top:focus {
 .product-filter select {
     font-size: 14px;
     font-weight: 400;
-    color: #333
+    color: #00000
 }
 
 .categories-icon .icon-box {
     text-align: center;
     padding: 15px;
     margin-bottom: 30px;
-    background: #b0b0b0;
+    background: #fff;
     border-radius: 4px;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -2422,17 +2422,17 @@ a.back-to-top:focus {
 }
 
 .categories-icon .icon-box:hover {
-    background: #98e4ff;
+    background: #0076C0;
     box-shadow: 0 16px 20px 0 rgba(216, 216, 216, .75)
 }
 
 .categories-icon .icon-box:hover .icon i {
     font-size: 42px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .categories-icon .icon-box:hover h4 {
-    color: #b0b0b0
+    color: #fff
 }
 
 .ad-categories-inner {
@@ -2490,22 +2490,22 @@ a.back-to-top:focus {
 .ad-categories-inner .ad-content-inner .info-title {
     font-size: 20px;
     margin: 0 0 5px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 500
 }
 
 .ad-categories-inner .ad-content-inner .ad-number {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 14px
 }
 
 .ad-categories-inner .icon {
     position: absolute;
-    background: #98e4ff;
+    background: #0076C0;
     bottom: 30px;
     right: 30px;
     z-index: 2;
-    color: #b0b0b0;
+    color: #fff;
     width: 52px;
     height: 52px;
     text-align: center;
@@ -2554,7 +2554,7 @@ a.back-to-top:focus {
 }
 
 .page-sidebar .categories-list li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .page-sidebar .categories-list li a i {
@@ -2575,7 +2575,7 @@ a.back-to-top:focus {
 
 .services-item {
     padding: 30px 5px 40px 40px;
-    background: #b0b0b0;
+    background: #fff;
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23);
     position: relative;
@@ -2595,13 +2595,13 @@ a.back-to-top:focus {
 .services-item .icon i {
     width: 50px;
     height: 50px;
-    background: #b0b0b0;
+    background: #fff;
     text-align: center;
     display: inline-block;
     line-height: 50px;
     font-size: 24px;
     border-radius: 4px;
-    color: #98e4ff;
+    color: #0076C0;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23);
     transition: all .3s ease-in-out 0s;
     -moz-transition: all .3s ease-in-out 0s;
@@ -2617,12 +2617,12 @@ a.back-to-top:focus {
 
 .services-item .services-content h3 a {
     font-size: 18px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .services-item:hover .icon i {
-    background: #98e4ff;
-    color: #b0b0b0
+    background: #0076C0;
+    color: #fff
 }
 
 .works-item {
@@ -2647,15 +2647,15 @@ a.back-to-top:focus {
     border-radius: 50%;
     display: inline-block;
     line-height: 143px;
-    background: #b0b0b0;
+    background: #fff;
     font-size: 42px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .works-item p {
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: #00000;
     line-height: 35px
 }
 
@@ -2673,10 +2673,10 @@ a.back-to-top:focus {
     position: absolute;
     top: 30px;
     left: 5px;
-    background: #98e4ff;
+    background: #0076C0;
     padding: 10px 25px;
     font-size: 20px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 500
 }
 
@@ -2698,7 +2698,7 @@ a.back-to-top:focus {
     opacity: 1;
     border-radius: 30px;
     background: #ddd;
-    border: 2px solid #b0b0b0;
+    border: 2px solid #fff;
     box-shadow: 0 0 3px rgba(66, 68, 67, .55);
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -2707,11 +2707,11 @@ a.back-to-top:focus {
 }
 
 .ads-details-wrapper .owl-dots span:hover {
-    background: #98e4ff
+    background: #0076C0
 }
 
 .ads-details-wrapper .owl-dots .active span {
-    background: #98e4ff !important
+    background: #0076C0 !important
 }
 
 .details-box {
@@ -2741,7 +2741,7 @@ a.back-to-top:focus {
 }
 
 .details-box .ads-details-info .details-meta span a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .details-box .ads-details-info .details-meta span a i {
@@ -2771,7 +2771,7 @@ a.back-to-top:focus {
 
 .details-box .ads-details-info .list-specification li i {
     margin-right: 5px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .details-box .tag-bottom {
@@ -2788,12 +2788,12 @@ a.back-to-top:focus {
 }
 
 .details-box .advertisement li p {
-    color: #333
+    color: #00000
 }
 
 .details-box .advertisement li i {
     margin-right: 5px;
-    color: #333
+    color: #00000
 }
 
 .details-box .advertisement li a {
@@ -2805,13 +2805,13 @@ a.back-to-top:focus {
     margin-right: 12px;
     line-height: 30px;
     font-size: 16px;
-    color: #333;
+    color: #00000;
     font-weight: 500
 }
 
 .details-box .social-link a {
     display: inline-block;
-    color: #b0b0b0;
+    color: #fff;
     margin-right: 5px;
     border-radius: 4px;
     background: #fafafa;
@@ -2842,7 +2842,7 @@ a.back-to-top:focus {
 }
 
 .details-sidebar .agent-inner {
-    background-color: #b0b0b0;
+    background-color: #fff;
     color: #999;
     border-radius: 4px;
     padding: 32px;
@@ -2863,7 +2863,7 @@ a.back-to-top:focus {
 
 .details-sidebar .agent-inner .agent-title .agent-photo img {
     border-radius: 50%;
-    border: 2px solid #98e4ff;
+    border: 2px solid #0076C0;
     max-width: 72px
 }
 
@@ -2880,7 +2880,7 @@ a.back-to-top:focus {
 }
 
 .details-sidebar .agent-inner .agent-title .agent-details h3 a {
-    color: #333;
+    color: #00000;
     margin: 0 0 6px
 }
 
@@ -2954,11 +2954,11 @@ a.back-to-top:focus {
 }
 
 .details-sidebar .posts-list .widget-content a {
-    color: #333
+    color: #00000
 }
 
 .details-sidebar .posts-list .widget-content a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .details-sidebar .posts-list .widget-content span {
@@ -2988,12 +2988,12 @@ a.back-to-top:focus {
 }
 
 .details-sidebar .posts-list .meta-tag span a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .details-sidebar .posts-list .price {
     font-size: 16px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .sidebar-box {
@@ -3009,7 +3009,7 @@ a.back-to-top:focus {
     padding: 15px 20px;
     position: relative;
     margin-bottom: 5px;
-    background: #98e4ff
+    background: #0076C0
 }
 
 .sidebar-box .user figure {
@@ -3019,7 +3019,7 @@ a.back-to-top:focus {
 
 .sidebar-box .user figure img {
     border-radius: 50%;
-    border: 2px solid #b0b0b0
+    border: 2px solid #fff
 }
 
 .sidebar-box .user .usercontent {
@@ -3027,7 +3027,7 @@ a.back-to-top:focus {
 }
 
 .sidebar-box .user .usercontent h3 {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
     line-height: 16px;
@@ -3055,7 +3055,7 @@ a.back-to-top:focus {
 }
 
 .sidebar-box .navdashboard ul li a {
-    color: #333;
+    color: #00000;
     width: 100%;
     float: left;
     line-height: inherit
@@ -3076,14 +3076,14 @@ a.back-to-top:focus {
 .sidebar-box .navdashboard ul li a:focus,
 .sidebar-box .navdashboard ul li a:hover,
 .sidebar-box .navdashboard ul li a.active {
-    background: #98e4ff;
-    color: #b0b0b0
+    background: #0076C0;
+    color: #fff
 }
 
 .sidebar-box .navdashboard ul li a:focus i,
 .sidebar-box .navdashboard ul li a:hover i,
 .sidebar-box .navdashboard ul li a.active i {
-    color: #b0b0b0
+    color: #fff
 }
 
 .dashboard-sections {
@@ -3094,7 +3094,7 @@ a.back-to-top:focus {
     width: 100%;
     float: left;
     overflow: hidden;
-    background: #b0b0b0;
+    background: #fff;
     position: relative;
     border-radius: 4px;
     padding: 10px;
@@ -3113,10 +3113,10 @@ a.back-to-top:focus {
     line-height: 42px;
     width: 42px;
     border-radius: 50%;
-    color: #b0b0b0;
+    color: #fff;
     height: 42px;
     display: inline-block;
-    background: #98e4ff
+    background: #0076C0
 }
 
 .dashboard-sections .contentbox {
@@ -3131,13 +3131,13 @@ a.back-to-top:focus {
 }
 
 .dashboard-sections .contentbox h2 a {
-    color: #333;
+    color: #00000;
     bottom: 10px;
     padding: 0 14px 0 0
 }
 
 .dashboard-sections .contentbox h2 a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .dashboard-sections .contentbox h3 {
@@ -3270,7 +3270,7 @@ a.back-to-top:focus {
 }
 
 .tg-fileuploadlabel .btn {
-    color: #b0b0b0;
+    color: #fff;
     padding: 10px 50px;
     position: relative;
     text-align: center;
@@ -3296,11 +3296,11 @@ a.back-to-top:focus {
 }
 
 .checkbox a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #98e4ff
+    background-color: #0076C0
 }
 
 label {
@@ -3313,7 +3313,7 @@ label {
 
 .tg-checkbox a {
     font-size: 13px;
-    color: #333
+    color: #00000
 }
 
 .tg-inputwithicon .tg-select {
@@ -3343,8 +3343,8 @@ label {
     font-size: 14px;
     width: 100%;
     font-weight: 400;
-    color: #333;
-    background: #b0b0b0;
+    color: #00000;
+    background: #fff;
     z-index: 1;
     width: 100%;
     position: relative;
@@ -3374,7 +3374,7 @@ label {
 }
 
 .nav-table ul li a {
-    color: #98e4ff;
+    color: #0076C0;
     padding: 7px 16px;
     display: inline-block;
     border: 1px solid #eaedef;
@@ -3383,8 +3383,8 @@ label {
 
 .nav-table ul li a:hover,
 .nav-table ul li.active a {
-    background: #98e4ff;
-    color: #b0b0b0
+    background: #0076C0;
+    color: #fff
 }
 
 .dashboardtable tbody tr {
@@ -3394,7 +3394,7 @@ label {
 }
 
 .dashboardtable thead tr th {
-    color: #333;
+    color: #00000;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -3413,7 +3413,7 @@ label {
 
 .dashboardtable tbody tr td,
 .dashboardtable tbody tr td h3 {
-    color: #333;
+    color: #00000;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
@@ -3441,7 +3441,7 @@ label {
 
 .adstatus {
     width: 80px;
-    color: #b0b0b0;
+    color: #fff;
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -3457,7 +3457,7 @@ label {
 }
 
 .adstatusactive {
-    background: #98e4ff
+    background: #0076C0
 }
 
 .adstatusexpired {
@@ -3501,17 +3501,17 @@ label {
 
 .dashboardtable tbody tr:hover .btn-delete {
     background: #f91942;
-    color: #b0b0b0
+    color: #fff
 }
 
 .dashboardtable tbody tr:hover .btn-edit {
     background: #363b4d;
-    color: #b0b0b0
+    color: #fff
 }
 
 .dashboardtable tbody tr:hover .btn-view {
     background: #00cc67;
-    color: #b0b0b0
+    color: #fff
 }
 
 .dashboardtable tbody tr:hover {
@@ -3574,7 +3574,7 @@ label {
     border-radius: 50%;
     margin-right: 20px;
     box-shadow: 0 2px 12px 0 rgba(198, 198, 198, .3);
-    border: 2px solid #b0b0b0;
+    border: 2px solid #fff;
     position: relative
 }
 
@@ -3586,7 +3586,7 @@ label {
 .offers-user-online .offerer .bolticon {
     width: 8px;
     height: 8px;
-    background: #98e4ff;
+    background: #0076C0;
     border-radius: 50%;
     position: absolute;
     top: 18px;
@@ -3598,7 +3598,7 @@ label {
 }
 
 .offers-user-online .offerer .user-name h3 {
-    color: #333;
+    color: #00000;
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
@@ -3610,7 +3610,7 @@ label {
 }
 
 .offers-user-online .offerer .user-name h4 a {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .chat-message-box {
@@ -3631,7 +3631,7 @@ label {
     border-radius: 50%;
     margin-right: 20px;
     box-shadow: 0 2px 12px 0 rgba(198, 198, 198, .3);
-    border: 2px solid #b0b0b0;
+    border: 2px solid #fff;
     position: relative
 }
 
@@ -3648,7 +3648,7 @@ label {
     width: auto;
     padding: 10px;
     margin: 0 0 5px;
-    background: #b0b0b0
+    background: #fff
 }
 
 .chat-message-box .offerermessage .description .info h3 {
@@ -3680,7 +3680,7 @@ label {
     border-radius: 50%;
     margin-right: 20px;
     box-shadow: 0 2px 12px 0 rgba(198, 198, 198, .3);
-    border: 2px solid #b0b0b0;
+    border: 2px solid #fff;
     bottom: 21px;
     width: 30px;
     height: 30px;
@@ -3702,7 +3702,7 @@ label {
     width: auto;
     padding: 10px;
     margin: 0 0 5px;
-    background: #b0b0b0
+    background: #fff
 }
 
 .chat-message-box .memessage .description .info h3 {
@@ -3720,7 +3720,7 @@ label {
 }
 
 .chat-message-box .memessage .description a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .chat-message-box .memessage .description .date {
@@ -3803,7 +3803,7 @@ label {
 }
 
 #pricing-table .title h3 {
-    color: #333;
+    color: #00000;
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 0
@@ -3812,7 +3812,7 @@ label {
 #pricing-table .table {
     padding-bottom: 30px;
     border-radius: 4px;
-    background: #b0b0b0;
+    background: #fff;
     border: 1px solid #e6e6e6;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -3826,7 +3826,7 @@ label {
 }
 
 #pricing-table .table .icon i {
-    color: #98e4ff;
+    color: #0076C0;
     font-size: 42px
 }
 
@@ -3837,7 +3837,7 @@ label {
 
 #pricing-table .table .pricing-header .price-value {
     font-size: 30px;
-    color: #98e4ff;
+    color: #0076C0;
     position: relative;
     text-align: center;
     font-weight: 500;
@@ -3882,14 +3882,14 @@ label {
 }
 
 .testimonial .img-thumb img {
-    border: 3px solid #98e4ff;
+    border: 3px solid #0076C0;
     border-radius: 50%;
     width: auto
 }
 
 .testimonial-item {
     padding: 15px;
-    background: #b0b0b0;
+    background: #fff;
     border-radius: 0;
     border: 1px solid #e6e6e6
 }
@@ -3914,11 +3914,11 @@ label {
 }
 
 .testimonial-item .content .info-text h2 a {
-    color: #333
+    color: #00000
 }
 
 .testimonial-item .content .info-text h2 a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .testimonial-item .content .info-text h4 {
@@ -3941,7 +3941,7 @@ label {
 }
 
 .testimonial-item .content h3 a {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .owl-carousel .owl-item img {
@@ -3970,8 +3970,8 @@ label {
     filter: alpha(opacity=50);
     opacity: 1;
     border-radius: 30px;
-    background: #b0b0b0;
-    border: 2px solid #b0b0b0;
+    background: #fff;
+    border: 2px solid #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, .2);
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -3981,11 +3981,11 @@ label {
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background: #98e4ff
+    background: #0076C0
 }
 
 #blog .blog-item-wrapper {
-    background: #b0b0b0;
+    background: #fff;
     border-radius: 0;
     margin-bottom: 30px;
     -webkit-transition: transform .2s linear, -webkit-box-shadow .2s linear;
@@ -4039,11 +4039,11 @@ label {
 }
 
 #blog .blog-item-text h3 a {
-    color: #333
+    color: #00000
 }
 
 #blog .blog-item-text h3 a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 #blog .blog-item-text p {
@@ -4052,11 +4052,11 @@ label {
 }
 
 #blog .blog-item-text .btn-rm {
-    color: #333
+    color: #00000
 }
 
 #blog .blog-item-text .btn-rm:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .blog-post {
@@ -4075,11 +4075,11 @@ label {
 }
 
 .blog-post .post-content .post-title a {
-    color: #333
+    color: #00000
 }
 
 .blog-post .post-content .post-title a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .blog-post .meta {
@@ -4125,14 +4125,14 @@ blockquote {
     margin-right: 10px;
     padding: 10px 15px;
     border-radius: 4px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .page-link:focus,
 .page-link:hover,
 .page-link.active {
-    background-color: #98e4ff;
-    color: #b0b0b0;
+    background-color: #0076C0;
+    color: #fff;
     box-shadow: none
 }
 
@@ -4156,11 +4156,11 @@ blockquote {
     top: 10px;
     left: 10px;
     padding: 7px 17px;
-    background-color: #b0b0b0
+    background-color: #fff
 }
 
 .post-thumb .date .day {
-    color: #98e4ff;
+    color: #0076C0;
     display: block;
     font-size: 24px;
     font-weight: 700
@@ -4175,7 +4175,7 @@ blockquote {
 }
 
 .post-meta a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .post-meta span {
@@ -4211,8 +4211,8 @@ blockquote {
 }
 
 .tags-area .post-tags a:hover {
-    background: #98e4ff;
-    color: #b0b0b0
+    background: #0076C0;
+    color: #fff
 }
 
 .share-items .list-inline li {
@@ -4225,7 +4225,7 @@ blockquote {
     margin-left: 5px;
     font-size: 14px;
     line-height: 60px;
-    color: #98e4ff;
+    color: #0076C0;
     text-align: center
 }
 
@@ -4272,10 +4272,10 @@ blockquote {
 }
 
 .blog-post-item .post-thumb .post-categories a {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 13px;
     display: inline-block;
-    background: #98e4ff;
+    background: #0076C0;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -4292,7 +4292,7 @@ blockquote {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #b0b0b0;
+    color: #fff;
     background-image: -webkit-linear-gradient(top, transparent 0%, #323031 100%);
     background-image: -o-linear-gradient(top, transparent 0%, #323031 100%);
     background-image: linear-gradient(to bottom, transparent 0%, #323031 100%);
@@ -4312,7 +4312,7 @@ blockquote {
 }
 
 .blog-post-item .post-item-content .post-title a {
-    color: #b0b0b0
+    color: #fff
 }
 
 .blog-post-item:hover .post-categories {
@@ -4357,7 +4357,7 @@ blockquote {
 
 #comments .comments-list .media .thumb-left img {
     border-radius: 50%;
-    border: 2px solid #b0b0b0;
+    border: 2px solid #fff;
     box-shadow: 0 2px 18px 0 rgba(198, 198, 198, .3)
 }
 
@@ -4365,7 +4365,7 @@ blockquote {
     margin-left: 20px;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23);
     padding: 15px;
-    background: #b0b0b0
+    background: #fff
 }
 
 #comments .comments-list .media .info-body .media-heading {
@@ -4392,7 +4392,7 @@ blockquote {
 }
 
 .reply-link {
-    color: #98e4ff;
+    color: #0076C0;
     font-size: 14px;
     margin-left: 5px;
     -webkit-transition: all .4s ease;
@@ -4402,7 +4402,7 @@ blockquote {
 }
 
 .reply-link:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .right-sidebar {
@@ -4468,7 +4468,7 @@ blockquote {
 }
 
 #sidebar .categories-list li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 #sidebar .categories-list li a i {
@@ -4516,7 +4516,7 @@ blockquote {
 }
 
 #sidebar .posts-list .widget-content a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 #sidebar .posts-list .widget-content span {
@@ -4547,7 +4547,7 @@ blockquote {
 }
 
 #sidebar .tagcloud a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 #sidebar .add-box {
@@ -4594,7 +4594,7 @@ blockquote {
     content: "";
     height: 3px;
     width: 40px;
-    background: #98e4ff;
+    background: #0076C0;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -4608,7 +4608,7 @@ blockquote {
 #content .information h3 {
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: #00000;
     border-bottom: 1px solid #f1f1f1;
     margin: 0;
     padding: 20px
@@ -4626,7 +4626,7 @@ blockquote {
 
 #content .information .contact-datails .info li span {
     font-weight: 500;
-    color: #333;
+    color: #00000;
     width: 26%
 }
 
@@ -4644,17 +4644,17 @@ blockquote {
 }
 
 #content .information .contact-datails .info li p a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .call-back h4 {
     font-size: 30px;
-    color: #333;
+    color: #00000;
     margin-bottom: 30px
 }
 
 .call-back .call-us {
-    border: 1px solid #98e4ff;
+    border: 1px solid #0076C0;
     padding: 15px
 }
 
@@ -4664,7 +4664,7 @@ blockquote {
 
 .call-back .call-us .icon i {
     font-size: 36px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .call-back .call-us .contact-text {
@@ -4678,7 +4678,7 @@ blockquote {
 
 .call-back .call-us .contact-text h5 {
     font-size: 22px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .call-back .call-us .contact-text p {
@@ -4694,8 +4694,8 @@ blockquote {
     width: 100%;
     font-size: 14px;
     box-shadow: none;
-    color: #333;
-    background: #b0b0b0;
+    color: #00000;
+    background: #fff;
     padding: 10px;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
@@ -4711,7 +4711,7 @@ textarea {
 }
 
 .form-control:focus {
-    border-color: #98e4ff;
+    border-color: #0076C0;
     outline: 0;
     box-shadow: none
 }
@@ -4770,7 +4770,7 @@ textarea {
 }
 
 .login-area .forgetpassword:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .login-area .form-links a {
@@ -4778,7 +4778,7 @@ textarea {
 }
 
 .login-area .form-links a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .custom-control {
@@ -4808,7 +4808,7 @@ textarea {
 
 .subscribes .subscribes-inner .icon i {
     font-size: 42px;
-    color: #333;
+    color: #00000;
     line-height: 55px
 }
 
@@ -4819,7 +4819,7 @@ textarea {
 
 .subscribes .subscribes-inner .sub-text h3 {
     font-size: 30px;
-    color: #333;
+    color: #00000;
     font-weight: 500;
     margin-bottom: 0;
     line-height: 35px
@@ -4838,7 +4838,7 @@ textarea {
 .subscribe .form-control {
     float: left;
     width: 100%;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #fff;
     border-radius: 4px;
     position: relative;
     height: 52px
@@ -4854,7 +4854,7 @@ textarea {
 .block-title {
     font-size: 18px;
     font-weight: 500;
-    color: #b0b0b0;
+    color: #fff;
     margin-bottom: 20px;
     padding-bottom: 25px;
     position: relative
@@ -4898,7 +4898,7 @@ footer .menu li a {
 }
 
 footer .menu li a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .contact-footer {
@@ -4929,7 +4929,7 @@ footer .menu li a:hover {
 }
 
 .contact-footer li span a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .footer-social {
@@ -4942,9 +4942,9 @@ footer .menu li a:hover {
 }
 
 .footer-social li a {
-    background-color: #98e4ff;
+    background-color: #0076C0;
     border-radius: 4px;
-    color: #b0b0b0;
+    color: #fff;
     height: 32px;
     line-height: 32px;
     text-align: center;
@@ -4972,9 +4972,9 @@ footer .menu li a:hover {
 }
 
 #copyright {
-    background-color: #98e4ff;
+    background-color: #0076C0;
     padding: 20px 0 10px;
-    color: #b0b0b0
+    color: #fff
 }
 
 #copyright p {
@@ -4982,7 +4982,7 @@ footer .menu li a:hover {
 }
 
 #copyright p a {
-    color: #b0b0b0
+    color: #fff
 }
 
 #copyright p a:hover {
@@ -5063,12 +5063,12 @@ footer .menu li a:hover {
 
 .special-product .product-text h3 {
     font-size: 30px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .special-product .product-text .offer-details {
     margin-top: 30px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .special-product .product-text .offer-details h4 {
@@ -5081,7 +5081,7 @@ footer .menu li a:hover {
 
 .special-product .product-text .price {
     font-weight: 700;
-    color: #b0b0b0;
+    color: #fff;
     font-size: 26px;
     color: #03cd67;
     margin-bottom: 15px
@@ -5095,16 +5095,16 @@ footer .menu li a:hover {
 
 .special-product .product-text .icon-footer a {
     font-size: 30px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .special-product .product-text .icon-footer a:hover {
-    color: #98e4ff
+    color: #0076C0
 }
 
 .special-product .product-text .text {
     font-size: 15px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 500
 }
 
@@ -5132,14 +5132,14 @@ footer .menu li a:hover {
 .img-box .img-box-content h4 {
     font-size: 18px;
     line-height: 36px;
-    color: #b0b0b0;
+    color: #fff;
     margin: 0
 }
 
 .img-box .img-box-content span {
     margin-left: 10px;
     font-size: 16px;
-    color: #b0b0b0
+    color: #fff
 }
 
 .img-box .img-box-background {
@@ -5172,7 +5172,7 @@ footer .menu li a:hover {
 }
 
 .img-box:hover:before {
-    background-color: #98e4ff;
+    background-color: #0076C0;
     opacity: .7
 }
 
@@ -5192,7 +5192,7 @@ footer .menu li a:hover {
 
 .single-cta .cta-icon i {
     font-size: 40px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .single-cta .content {
@@ -5225,7 +5225,7 @@ footer .menu li a:hover {
     padding: 0 20px;
     outline: none;
     border-radius: 4px;
-    background: #98e4ff;
+    background: #0076C0;
     border: 1px solid transparent;
     width: 100%;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23)
@@ -5245,7 +5245,7 @@ footer .menu li a:hover {
     padding: 15px 35px 15px 30px;
     display: inline-block;
     width: 100%;
-    color: #b0b0b0;
+    color: #fff;
     position: relative
 }
 
@@ -5254,7 +5254,7 @@ footer .menu li a:hover {
     content: "\e9d6";
     position: absolute;
     left: 0;
-    color: #b0b0b0;
+    color: #fff;
     top: 50%;
     line-height: 1;
     padding: 0 5px;
@@ -5267,7 +5267,7 @@ footer .menu li a:hover {
 
 .panel-default .panel-collapse .panel-body {
     padding: 15px 20px;
-    background-color: #b0b0b0;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(175, 175, 175, .23)
 }
 
@@ -5299,11 +5299,11 @@ footer .menu li a:hover {
 
 .counter-section .counter .icon i {
     font-size: 48px;
-    color: #98e4ff
+    color: #0076C0
 }
 
 .counter-section .counter .counterUp {
-    color: #b0b0b0;
+    color: #fff;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px
@@ -5311,7 +5311,7 @@ footer .menu li a:hover {
 
 .counter-section .counter p {
     font-size: 18px;
-    color: #b0b0b0;
+    color: #fff;
     font-weight: 500
 }
 
@@ -5326,7 +5326,7 @@ footer .menu li a:hover {
 }
 
 .error-content .error-message h2 {
-    color: #98e4ff;
+    color: #0076C0;
     font-size: 200px;
     position: relative;
     margin: 0;
@@ -5334,7 +5334,7 @@ footer .menu li a:hover {
 }
 
 .error-content .error-message h3 {
-    color: #333;
+    color: #00000;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 20px
@@ -5381,5 +5381,5 @@ footer .menu li a:hover {
 }
 
 .error-content .description a:hover {
-    color: #98e4ff
+    color: #0076C0
 }

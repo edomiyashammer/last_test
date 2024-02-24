@@ -296,7 +296,7 @@
     z-index: 100;
     display: none;
     color: #87cefa;
-    background-color: #b0b0b0;
+    background-color: #fff;
     opacity: .95
 }
 
@@ -361,7 +361,7 @@
     overflow: auto;
     color: #000;
     word-wrap: break-word;
-    background-color: #b0b0b0
+    background-color: #fff
 }
 
 .note-editor.note-frame .note-editing-area .note-editable[contenteditable=false] {
@@ -398,7 +398,7 @@
 }
 
 .note-editor.note-frame.fullscreen .note-editable {
-    background-color: #b0b0b0
+    background-color: #fff
 }
 
 .note-editor.note-frame.fullscreen .note-resizebar {
@@ -641,7 +641,7 @@
     height: 20px;
     padding: 0;
     margin: 0;
-    border: 1px solid #b0b0b0
+    border: 1px solid #fff
 }
 
 .note-popover .popover-content .note-color-palette div .note-color-btn:hover,
@@ -721,7 +721,7 @@
 .note-handle .note-control-selection .note-control-sizing {
     width: 7px;
     height: 7px;
-    background-color: #b0b0b0;
+    background-color: #fff;
     border: 1px solid #000
 }
 
@@ -764,7 +764,7 @@
     padding: 5px;
     margin: 5px;
     font-size: 12px;
-    color: #b0b0b0;
+    color: #fff;
     background-color: #000;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -799,7 +799,7 @@
     clear: both;
     font-weight: 400;
     line-height: 1.4;
-    color: #b0b0b0;
+    color: #fff;
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;

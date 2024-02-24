@@ -5,7 +5,7 @@
 }
 
 #color-style-switcher {
-    background: #b0b0b0;
+    background: #fff;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .14);
     left: -145px;
     position: fixed;
@@ -23,7 +23,7 @@
 }
 
 #color-style-switcher .bottom a.settings {
-    background-color: #b0b0b0;
+    background-color: #fff;
     box-shadow: 7px 2px 14px 0 rgba(0, 0, 0, .14);
     display: block;
     height: 45px;
@@ -41,7 +41,7 @@
 
 #color-style-switcher select {
     background: none repeat scroll 0 0 #f6f6f6;
-    border: 1px solid #b0b0b0;
+    border: 1px solid #fff;
     line-height: 1;
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -74,7 +74,7 @@ ul.colors li a.active {
 }
 
 ul.colors li a.active:after {
-    color: #b0b0b0;
+    color: #fff;
     content: "\e938";
     font-family: lineicons;
     font-size: 10px;
@@ -85,7 +85,7 @@ ul.colors li a.active:after {
 
 ul.colors li a.color1.active:after,
 ul.colors li a.color8.active:after {
-    color: #b0b0b0
+    color: #fff
 }
 
 @media only screen and (max-width:500px) {
@@ -95,7 +95,7 @@ ul.colors li a.color8.active:after {
 }
 
 ul.colors .color1 {
-    background: #98e4ff
+    background: #0076C0
 }
 
 ul.colors .color2 {

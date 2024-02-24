@@ -8,10 +8,10 @@ html[data-theme="light"],
     --primary: #79aec8;
     --secondary: #417690;
     --accent: #f5dd5d;
-    --primary-fg: #b0b0b0;
+    --primary-fg: #fffcfc;
 
-    --body-fg: #333;
-    --body-bg: #b0b0b0;
+    --body-fg: #00000;
+    --body-bg: #fffcfc;
     --body-quiet-color: #666;
     --body-loud-color: #000;
 
@@ -43,13 +43,13 @@ html[data-theme="light"],
     /* E.g. selected table cells */
     --selected-row: #ffc;
 
-    --button-fg: #b0b0b0;
+    --button-fg: #fffcfc;
     --button-bg: var(--primary);
     --button-hover-bg: #609ab6;
     --default-button-bg: var(--secondary);
     --default-button-hover-bg: #205067;
     --close-button-bg: #747474;
-    --close-button-hover-bg: #333;
+    --close-button-hover-bg: #00000;
     --delete-button-bg: #ba2121;
     --delete-button-hover-bg: #a41515;
 
