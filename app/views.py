@@ -3,6 +3,9 @@ from django.views import View
 from .forms import ProductForm
 from .models import Category, Product, Cart, CartItem, Subcategory, Post
 from django.contrib.auth.decorators import login_required
+from django.dispatch import receiver
+from PIL import Image, ImageDraw, ImageFont
+from django.db.models.signals import post_save
 
 
 def index(request, category_id=None):
@@ -211,6 +214,28 @@ class ProductListView(View):
 def trend(request):
     products = Product.objects.all()
     return render(request, "trand.html", {"products": products})
+
+
+@receiver(post_save, sender=Product)
+def add_watermark(sender, instance, created, **kwargs):
+    if created:  # Only perform this action if the product is newly created
+        watermark_path = "assets/assets/img/logo1.png"
+        product_image_path = (
+            instance.image1.path
+        )  # Assuming image1 is the main product image
+
+        # Open the product image
+        with Image.open(product_image_path) as img:
+            # Open the watermark image
+            with Image.open(watermark_path) as watermark:
+                # Calculate the position to place the watermark
+                position = (img.width - watermark.width, img.height - watermark.height)
+
+                # Paste the watermark onto the product image
+                img.paste(watermark, position, watermark)
+
+                # Save the modified image
+                img.save(product_image_path)
 
 
 def product_create(request):
