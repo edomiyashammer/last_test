@@ -400,7 +400,7 @@ a.back-to-top:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(54, 59, 77, .88)
+    background: rgb(37, 82, 119)
 }
 
 .page-header .breadcrumb-wrapper .product-title {

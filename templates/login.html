@@ -8,6 +8,7 @@
 
 {% include 'nav.html' %}
 
+
 <div class="page-header" style="background: url(assets/img/banner1.jpg);">
     <div class="container">
         <div class="row">
@@ -48,9 +49,13 @@
                     <div class="input-icon">
                         <i class="lni-lock"></i>
                         {{ form.password }}
-                        <button type="button" class="btn-show-password" onclick="togglePasswordVisibility()">Show
-                            Password</button>
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="show-password">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                            </span>
+                        </div>
                     </div>
+                    <div id="password-strength-meter" class="mt-2"></div>
                 </div>
 
                 <div class="form-group mb-3">
@@ -76,22 +81,65 @@
     </div>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function togglePasswordVisibility() {
-        var passwordInput = document.getElementById("id_password");
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-        } else {
-            passwordInput.type = "password";
-        }
-    }
+    $(document).ready(function () {
+        $('#show-password').click(function () {
+            var passwordField = $('#password');
+            var passwordFieldType = passwordField.attr('type');
+
+            if (passwordFieldType === 'password') {
+                passwordField.attr('type', 'text');
+                $('#show-password i').removeClass('fa-eye-slash');
+                $('#show-password i').addClass('fa-eye');
+            } else {
+                passwordField.attr('type', 'password');
+                $('#show-password i').removeClass('fa-eye');
+                $('#show-password i').addClass('fa-eye-slash');
+            }
+        });
+
+        $('#password').keyup(function () {
+            var password = $(this).val();
+            var meter = $('#password-strength-meter');
+            var strength = 0;
+
+            if (password.length == 0) {
+                meter.html('');
+                return;
+            }
+
+            // Define the criteria for the strength levels
+            var minLength = 8;
+            var hasLowercase = /[a-z]/.test(password);
+            var hasUppercase = /[A-Z]/.test(password);
+            var hasNumbers = /\d/.test(password);
+            var hasSpecialChars = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(password);
+
+            // Add strength points based on criteria
+            if (password.length >= minLength) {
+                strength += 1;
+            }
+            if (hasLowercase && hasUppercase) {
+                strength += 1;
+            }
+            if (hasNumbers) {
+                strength += 1;
+            }
+            if (hasSpecialChars) {
+                strength += 1;
+            }
+
+            // Display strength meter based on points
+            if (strength < 2) {
+                meter.html('<div class="progress"><div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Weak</div></div>');
+            } else if (strength < 4) {
+                meter.html('<div class="progress"><div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Medium</div></div>');
+            } else {
+                meter.html('<div class="progress"><div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Strong</div></div>');
+            }
+        });
+    });
 </script>
-
-
-
-
-
-
 
 {% endblock %}
