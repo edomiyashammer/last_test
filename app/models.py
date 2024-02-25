@@ -5,6 +5,8 @@ from django.db.models import F
 from django.urls import reverse
 from django.utils.text import slugify
 
+from users.models import Profile
+
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
