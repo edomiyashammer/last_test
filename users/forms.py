@@ -26,6 +26,10 @@ class RegisterForm(UserCreationForm):
                              widget=forms.TextInput(attrs={'placeholder': 'Email',
                                                            'class': 'form-control',
                                                            }))
+    phone = forms.CharField(required=True,
+                             widget=forms.TextInput(attrs={'placeholder': 'Phone',
+                                                           'class': 'form-control',
+                                                           }))
     password1 = forms.CharField(max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={'placeholder': 'Password',
