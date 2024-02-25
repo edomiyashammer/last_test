@@ -156,6 +156,7 @@ JAZZMIN_SETTINGS = {
     "copyright": "HammerTech.com",
 }
 
+
 # social auth configs for github
 SOCIAL_AUTH_GITHUB_KEY = str(os.getenv("GITHUB_KEY"))
 SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv("GITHUB_SECRET"))
