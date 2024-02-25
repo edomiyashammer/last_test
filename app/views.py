@@ -228,8 +228,11 @@ def add_watermark(sender, instance, created, **kwargs):
         with Image.open(product_image_path) as img:
             # Open the watermark image
             with Image.open(watermark_path) as watermark:
-                # Calculate the position to place the watermark
-                position = (img.width - watermark.width, img.height - watermark.height)
+                # Calculate the position to place the watermark at the center
+                position = (
+                    (img.width - watermark.width) // 2,
+                    (img.height - watermark.height) // 2,
+                )
 
                 # Paste the watermark onto the product image
                 img.paste(watermark, position, watermark)
