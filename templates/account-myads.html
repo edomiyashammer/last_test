@@ -127,6 +127,7 @@
                                 </thead>
                                 <tbody>
                                     {% for product in products %}
+                                    {% if product.user == request.user %}
                                     <tr data-category="{% if product.is_featured %}active{% endif %}">
                                         <td>
                                             <div class="custom-control custom-checkbox">
@@ -161,16 +162,14 @@
                                                 <a class="btn-action btn-delete"
                                                     href="{% url 'myapp:product_delete' product.pk %}"><i
                                                         class="lni-trash"></i></a>
-                                                {% if product.user == request.user %}
                                                 <button type="button" class="btn-action btn-show-password"
                                                     onclick="togglePasswordVisibility({{ product.id }})">Show
                                                     Password</button>
-                                                {% endif %}
                                             </div>
                                         </td>
                                     </tr>
+                                    {% endif %}
                                     {% endfor %}
-
                                 </tbody>
                             </table>
                         </div>
