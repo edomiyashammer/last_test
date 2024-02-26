@@ -219,7 +219,7 @@ def trend(request):
 @receiver(post_save, sender=Product)
 def add_watermark(sender, instance, created, **kwargs):
     if created:  # Only perform this action if the product is newly created
-        watermark_path = "assets/assets/img/logo1.png"
+        watermark_path = "assets/assets/img/WaterMark.png"
         product_image_path = (
             instance.image1.path
         )  # Assuming image1 is the main product image
