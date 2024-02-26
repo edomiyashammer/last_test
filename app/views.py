@@ -280,7 +280,7 @@ def success(request):
 @login_required
 def Dash(request):
 
-    products = Product.objects.all()
+    products = Product.objects.filter(user=request.user)
 
     return render(request, "dashboard.html", {'products': products})
 
@@ -298,7 +298,7 @@ def Privacy(request):
 @login_required
 def my_ads(request):
 
-    products = Product.objects.all()
+    products = Product.objects.filter(user=request.user)
 
     return render(request, "account-myads.html", {"products": products})
 

@@ -19,6 +19,7 @@ class Category(models.Model):
 class Product(models.Model):
 
     # Add the 'is_featured' field
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Add this line
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     subcategory = models.ForeignKey("Subcategory", on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
